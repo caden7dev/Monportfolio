@@ -11,6 +11,88 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    /* Styles supplémentaires pour les boutons GitHub */
+    .project-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .btn-github {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: #24292e;
+      color: #fff;
+      transition: all 0.3s ease;
+      border: none;
+      text-decoration: none;
+      line-height: 1;
+      gap: 6px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .btn-github:hover {
+      background: #0366d6;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(3, 102, 214, 0.3);
+    }
+
+    .btn-github svg {
+      display: block;
+      fill: currentColor;
+      width: 18px;
+      height: 18px;
+    }
+
+    .btn-github span {
+      display: none;
+    }
+
+    @media (min-width: 600px) {
+      .btn-github span {
+        display: inline;
+      }
+    }
+
+    .btn-details {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 16px;
+      border-radius: 8px;
+      background: #f0f0f0;
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      border: 1px solid #ddd;
+    }
+
+    .btn-details:hover {
+      background: #e0e0e0;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Version sombre pour le thème sombre */
+    [data-theme="dark"] .btn-details {
+      background: #2d2d2d;
+      color: #e0e0e0;
+      border-color: #444;
+    }
+
+    [data-theme="dark"] .btn-details:hover {
+      background: #3d3d3d;
+    }
+  </style>
 </head>
 <body>
 
@@ -63,7 +145,7 @@
             <span class="badge-dot"></span>
             <span style="font-size: 1.4rem; font-weight: 800;">AHADZI KOSSIVI CADEN</span>
           </div>
-          <h1 class="hero-title">Développeur Frontend<br>Mobile &amp; Web</h1>
+          <h1 class="hero-title">Développeur Full Stack<br>Mobile &amp; Web</h1>
           <p class="hero-sub">Je conçois des applications mobiles et web utiles, bien pensées et adaptées aux réalités locales.</p>
 
           <div class="hero-cta">
@@ -120,16 +202,16 @@
             </div>
             <div class="about-card-info">
               <p class="aci-name">Caden AHADZI</p>
-              <p class="aci-role">Développeur Frontend Mobile &amp; Web</p>
+              <p class="aci-role">Développeur Full Stack Mobile &amp; Web</p>
               <p class="aci-loc">📍 Lomé, Togo</p>
             </div>
           </div>
 
           <div class="about-content fade-in">
             <h3 class="about-heading">Passionné par le code<br>et les solutions <em>qui font la différence</em></h3>
-            <p class="about-para">Passionné par le développement d’applications, je maîtrise aussi bien le mobile avec <strong>Flutter</strong> que le web avec <strong>Laravel</strong>. Mon objectif : créer des solutions élégantes, performantes et centrées sur l’utilisateur.</p>
-            <p class="about-para">J’accorde une grande importance à la qualité du code, à l’architecture logicielle et à l’expérience utilisateur. Chaque projet est une opportunité d’apprendre et de repousser mes limites.</p>
-            <p class="about-para">Curieux et autodidacte, je suis constamment à l’affût des nouvelles technologies et des bonnes pratiques. Je mets un point d’honneur à livrer des interfaces soignées, une navigation fluide et des fonctionnalités robustes.</p>
+            <p class="about-para">Passionné par le développement d'applications, je maîtrise aussi bien le mobile avec <strong>Flutter</strong> que le web avec <strong>Laravel</strong>. Mon objectif : créer des solutions élégantes, performantes et centrées sur l'utilisateur.</p>
+            <p class="about-para">J'accorde une grande importance à la qualité du code, à l'architecture logicielle et à l'expérience utilisateur. Chaque projet est une opportunité d'apprendre et de repousser mes limites.</p>
+            <p class="about-para">Curieux et autodidacte, je suis constamment à l'affût des nouvelles technologies et des bonnes pratiques. Je mets un point d'honneur à livrer des interfaces soignées, une navigation fluide et des fonctionnalités robustes.</p>
             <div class="about-info">
               <div class="info-item">
                 <p class="info-label">Formation</p>
@@ -262,6 +344,12 @@
               <p>Application mobile de gestion d'un fastfood.</p>
               <div class="project-actions">
                 <a href="projet-fastfood.html" class="btn-details">📋 Détails du projet</a>
+                <a href="https://github.com/caden7dev/fastfood_app.git" target="_blank" rel="noopener noreferrer" class="btn-github">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.15 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.62.24 2.85.12 3.15.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
               </div>
             </div>
           </div>
@@ -279,6 +367,12 @@
               <p>Application de gestion des finances pour les commerçants du secteur informel au Togo.</p>
               <div class="project-actions">
                 <a href="projet-informel.html" class="btn-details">📋 Détails du projet</a>
+                <a href="https://github.com/caden7dev/InformelTogo.git" target="_blank" rel="noopener noreferrer" class="btn-github">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.15 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.62.24 2.85.12 3.15.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
               </div>
             </div>
           </div>
@@ -296,6 +390,12 @@
               <p>Plateforme web de déclaration de documents administratifs perdus ou retrouvés au Togo.</p>
               <div class="project-actions">
                 <a href="projet-edeclaration.html" class="btn-details">📋 Détails du projet</a>
+                <a href="https://github.com/caden7dev/Declarationperete.git" target="_blank" rel="noopener noreferrer" class="btn-github">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.15 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.62.24 2.85.12 3.15.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
               </div>
             </div>
           </div>
@@ -351,7 +451,6 @@
           </div>
 
           <div class="fade-in">
-            <!-- Formulaire avec Formspree (remplacer YOUR_FORM_ID par votre identifiant) -->
             <form action="https://formspree.io/f/mgoqneaq" method="POST" class="contact-form">
               <div class="form-row">
                 <div class="form-group">
@@ -378,24 +477,52 @@
       </div>
     </section>
 
-    <!-- Les modals sont conservées telles quelles (elles fonctionnent avec main.js) -->
-    <!-- Pour gagner de la place, on les réduit mais elles restent identiques au code original -->
-    <!-- (Copie des modals depuis votre fichier, mais en raccourci pour la lisibilité) -->
-    <!-- Je garde le contenu original des modals car il est déjà fonctionnel avec main.js -->
-    <!-- Attention : certaines fonctions comme slidePhoto, allerSlide, switchTabById, etc. sont définies dans main.js -->
-    <!-- Veillez à bien inclure le fichier js/main.js -->
+    <!-- Modals -->
+    <div class="modal-overlay" id="modal-0" onclick="fermerModalSiDehors(event, 'modal-0')">
+      <div class="modal-box">
+        <button class="modal-close" onclick="fermerModal('modal-0')" aria-label="Fermer">✕</button>
+        <div class="modal-header">
+          <h2>Fastfood App</h2>
+          <p>Application mobile de gestion de fastfood</p>
+        </div>
+        <div class="modal-body">
+          <p>Contenu du projet Fastfood App...</p>
+        </div>
+      </div>
+    </div>
 
-    <div class="modal-overlay" id="modal-0" onclick="fermerModalSiDehors(event, 'modal-0')"><div class="modal-box"><button class="modal-close" onclick="fermerModal('modal-0')" aria-label="Fermer">...</button><div class="modal-header">...</div></div></div>
-    <div class="modal-overlay" id="modal-1" onclick="fermerModalSiDehors(event, 'modal-1')"><div class="modal-box"><button class="modal-close" onclick="fermerModal('modal-1')" aria-label="Fermer">...</button><div class="modal-header">...</div></div></div>
-    <div class="modal-overlay" id="modal-2" onclick="fermerModalSiDehors(event, 'modal-2')"><div class="modal-box"><button class="modal-close" onclick="fermerModal('modal-2')" aria-label="Fermer">...</button><div class="modal-header">...</div></div></div>
-    <!-- Pour une version complète, conservez les modals exactes de votre fichier original, je les ai volontairement tronquées ici pour la lisibilité -->
+    <div class="modal-overlay" id="modal-1" onclick="fermerModalSiDehors(event, 'modal-1')">
+      <div class="modal-box">
+        <button class="modal-close" onclick="fermerModal('modal-1')" aria-label="Fermer">✕</button>
+        <div class="modal-header">
+          <h2>InformelTogo</h2>
+          <p>Gestion des finances pour le secteur informel</p>
+        </div>
+        <div class="modal-body">
+          <p>Contenu du projet InformelTogo...</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-2" onclick="fermerModalSiDehors(event, 'modal-2')">
+      <div class="modal-box">
+        <button class="modal-close" onclick="fermerModal('modal-2')" aria-label="Fermer">✕</button>
+        <div class="modal-header">
+          <h2>e-Déclaration TG</h2>
+          <p>Plateforme de déclaration de documents administratifs</p>
+        </div>
+        <div class="modal-body">
+          <p>Contenu du projet e-Déclaration TG...</p>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer>
     <div class="footer-inner">
       <a href="index.html#accueil" class="footer-logo"><span class="logo-bracket">&lt;&gt;</span><span class="logo-name">Caden</span></a>
       <div class="footer-links">
-        <a href="https://github.com/caden7dev/pertedoc.git" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/caden7dev" target="_blank" rel="noopener">GitHub</a>
         <a href="mailto:ahadzicaden7@gmail.com">Email</a>
       </div>
       <p class="footer-copy">© 2026 Caden AHADZI · Lomé, Togo</p>
